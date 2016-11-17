@@ -50,7 +50,6 @@
 
 <body>
 
-
   <!-- Preloader
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div id="preloader">
@@ -58,148 +57,36 @@
   </div>
 
 
-<!-- mobile only navigation : starts -->
-<nav class="mobile-nav">
-            <ul class="slimmenu">
-              <li>
-                  <a class="sub-collapser" href="">home</a>
-                  <ul>
-                      <li><a  href="index01.html">masonry</a></li>
-                      <li><a  href="index05.html">agency</a></li>
-                      <li><a  href="index02.html">fashion</a></li>
-                      <li><a  href="index07.html">photography</a></li>
-                      <li><a  href="index06.html">personal</a></li>
-                      <li><a  href="index04.html">fullscreen</a></li>
-                      <li><a  href="index03.html">bg video</a></li>
-                  </ul>
-              </li>
-              <li>
-                  <a class="sub-collapser" href="">works</a>
-                  <ul>
-                      <li><a  href="works.html">masonry / random</a></li>
-                      <li><a  href="works02.html">masonry / 3 col</a></li>
-                      <li><a  href="works03.html">masonry / 2 col</a></li>
-                      <li><a  href="works04.html">masonry / 4 col</a></li>
-                      <li><a  href="works05.html">masonry / spaced</a></li>
-                      <li><a  href="works09.html">random spaced</a></li>
-                      <li><a  href="works06.html">square grid</a></li>
-                      <li><a  href="works07.html">dual column</a></li>
-                      <li><a  href="works08.html">single column</a></li>
-                      <li><a  href="project01.html">project view</a></li>
-                  </ul>
-              </li>
-              <li>
-                  <a class="sub-collapser" href="">pages</a>
-                  <ul>
-                      <li><a  href="about.html">about</a></li>
-                      <li><a  href="pricing.html">pricing</a></li>
-                      <li><a  href="news.html">news listing</a></li>
-                      <li><a  href="post.html">news post</a></li>
-                      <li><a  href="elements.html">ui elements</a></li>
-                      <li><a  href="contact.html">contact</a></li>
-                  </ul>
-              </li>
-              <li><a  href="project01.html">project</a></li>
-              <li><a target="_blank" href="http://themeforest.net/user/designova/portfolio">buy theme</a></li>
-            </ul>
-</nav>
-<!-- mobile only navigation : ends -->
-
+  <!-- mobile only navigation : starts -->
+  <nav class="mobile-nav">
+    {!! Menu::display('main') !!}
+  </nav>
+  <!-- mobile only navigation : ends -->
 
   <a class="onscreen-trigger" href="#"><img alt="" title="" src="images/next.svg"/></a>
 
   <!-- Header
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <header class="masthead white-bg fullheight">
-    <div class="valign">
-      <div class="inner">
-          <a  href="index.html"><img alt="" title="" class="logo" src="images/logo.png"/></a>
-          <nav class="mastnav font2">
-            <ul>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="intro" class="main-nav-link" href="#">intro</a></li>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="works" class="main-nav-link" href="#">portfolio</a></li>
-              <li class="trigger-sub-nav"><a data-sub-nav-target="pages" class="main-nav-link" href="#">pages</a></li>
-              <li><a  href="project01.html">project</a></li>
-              <li><a target="_blank" href="http://themeforest.net/user/designova/portfolio">buy theme</a></li>
-            </ul>
-          </nav>
-      </div>
-    </div>
-
-
-
-    <div class="sticky-icons">
-        <ul>
-            <li><a class="fullscreen-toggle" href="#"><img alt="" title="" src="images/prev.svg"/></a></li>
-        </ul>
-    </div>
-  </header>
-
+  @include('nav.header')
 
   <!-- sub navigation panel : starts -->
   <section class="sub-nav-wrap fullheight dark-bg white font2">
-            <div class="valign">
+    <div class="valign">
 
+      <!-- sub navigation section -->
+      <ul class="sub-nav sub-nav-intro">
+        <li><a class="ajax-link" href="index01.html">masonry</a></li>
+        <li><a class="ajax-link" href="index05.html">agency</a></li>
+        <li><a class="ajax-link" href="index02.html">fashion</a></li>
+        <li><a class="ajax-link" href="index07.html">photography</a></li>
+        <li><a class="ajax-link" href="index06.html">personal</a></li>
+        <li><a class="ajax-link" href="index04.html">fullscreen</a></li>
+        <li><a class="ajax-link" href="index03.html">bg video</a></li>
+      </ul>
 
-              <!-- sub navigation section -->
-              <ul class="sub-nav sub-nav-intro">
-                <li><a  href="index01.html">masonry</a></li>
-                <li><a  href="index05.html">agency</a></li>
-                <li><a  href="index02.html">fashion</a></li>
-                <li><a  href="index07.html">photography</a></li>
-                <li><a  href="index06.html">personal</a></li>
-                <li><a  href="index04.html">fullscreen</a></li>
-                <li><a  href="index03.html">bg video</a></li>
-              </ul>
-
-              <!-- sub navigation section -->
-              <ul class="sub-nav sub-nav-works">
-                <li><a  href="works.html">masonry / random</a></li>
-                <li><a  href="works02.html">masonry / 3 col</a></li>
-                <li><a  href="works03.html">masonry / 2 col</a></li>
-                <li><a  href="works04.html">masonry / 4 col</a></li>
-                <li><a  href="works05.html">masonry / spaced</a></li>
-                <li><a  href="works09.html">random spaced</a></li>
-                <li><a  href="works06.html">square grid</a></li>
-                <li><a  href="works07.html">dual column</a></li>
-                <li><a  href="works08.html">single column</a></li>
-                <li><a  href="project01.html">project view</a></li>
-              </ul>
-
-              <!-- sub navigation section -->
-              <ul class="sub-nav sub-nav-pages">
-                <li><a  href="about.html">about</a></li>
-                <li><a  href="pricing.html">pricing</a></li>
-                <li><a  href="news.html">news listing</a></li>
-                <li><a  href="post.html">news post</a></li>
-                <li><a  href="elements.html">ui elements</a></li>
-                <li><a  href="contact.html">contact</a></li>
-              </ul>
-
-            </div>
+    </div>
   </section>
   <!-- sub navigation panel : ends -->
-
-
-  <section class="sticky-sidebar white-bg fullheight text-center">
-      <div class="valign">
-          <ul>
-            <li><a href="#" class="works-filter-trigger"><span class="ion-ios-shuffle dark"></span></a></li>
-            <li><a href="#0" class="cd-btn"><span class="ion-ios-browsers-outline dark"></span></a></li>
-            <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-heart-outline dark"></span></a></li>
-            <li><a  href="works.html"><span class="ion-ios-grid-view-outline dark"></span></a></li>
-          </ul>
-      </div>
-  </section>
-
-
-<!-- dummy overlay for whole page when sidebar is active -->
-<section class="featured-mask-overlay">
-
-</section>
-
-
-
 
 <section class="mastwrap-outer cd-main-content">
 
@@ -208,27 +95,18 @@
   <section id="ajax-content" class="mastwrap spaced-left">
 
 
-    <section class="silver-bg project-cover halfheight">
-        <div class="valign">
-            <article class="welcome-heading text-center">
-              <h1 class="dark"><span class="font2">{{$post->title}}</span></h1>
-            </article>
-        </div>
-    </section>
-
-
-
 
     <section class="sub-wrap add-top add-bottom project-info">
         <div class="container">
           <div class="row">
 
-            <article class="col-md-10 col-md-offset-1">
-              <h2 class="project-title font2 dark">Project Name Goes Here</h2>
+            <article class="col-md-10">
+              <h2 class="project-title font2 dark">{{$post->title}}</h2>
               <div class="liner color-bg"></div>
               <h3 class="font4 grey remove-top">This is a sample web page to showcase any of your project</h3>
-<iframe src="{{$post->excerpt}}" width="100%" height="360px"></iframe>
-<!-- Comments start -->
+              <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="{{$post->excerpt}}"></iframe>
+              </div><!-- Comments start -->
                  <div class="comments">
                    <div id="disqus_thread"></div>
                      <script type="text/javascript">
