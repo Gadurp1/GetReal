@@ -15,7 +15,7 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="{{Voyager::setting('logo ')}}" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -55,7 +55,6 @@
   <div id="preloader">
     <div id="status"></div>
   </div>
-
 
   <!-- mobile only navigation : starts -->
   <nav class="mobile-nav">
