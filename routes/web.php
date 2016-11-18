@@ -28,3 +28,10 @@ Route::get('/', function () {
 });
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('{slug}', function ($slug) {
+
+    $post=TCG\Voyager\Models\Post::where('slug',$slug)->first();
+    return view('show',compact('post'));
+
+});

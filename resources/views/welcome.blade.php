@@ -5,8 +5,8 @@
   <!-- Basic Page Info
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>OTTO - A premium web template from Designova</title>
-  <meta name="description" content="OTTO - A premium web template from Designova">
+  <title>Get Real Clothing</title>
+  <meta name="description" content="Clothing Skateboarding Chicago Goodness">
   <meta name="author" content="Designova">
 
   <!-- Mobile Specific Metas

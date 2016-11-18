@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <!-- Basic Page Info
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>OTTO - A premium web template from Designova</title>
-  <meta name="description" content="OTTO - A premium web template from Designova">
-  <meta name="author" content="Designova">
+  <title>Get Real Clothing | {{$post->title}}</title>
+  <meta name="description" content="{{str_limit($post->body,150)}}">
+  <meta name="author" content="Get Real">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
