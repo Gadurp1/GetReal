@@ -19,7 +19,7 @@ Route::get('/', function () {
 
     $instagram = new Instagram();
     $instagram = $instagram->get('getrealclothing');
-    
+
     $posts=TCG\Voyager\Models\Post::get();
     $products=\App\Product::orderBy('created_at','DESC')->get();
 

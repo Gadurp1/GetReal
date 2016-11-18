@@ -103,31 +103,14 @@
   </section>
   <!-- sub navigation panel : ends -->
 
-  <section class="sticky-sidebar white-bg fullheight text-center">
-      <div class="valign">
-          <ul>
-            <li><a href="#" class="works-filter-trigger"><span class="ion-ios-shuffle dark"></span></a></li>
-            <li><a href="#0" class="cd-btn"><span class="ion-ios-browsers-outline dark"></span></a></li>
-            <li><a href="#0" class="share-panel-trigger show"><span class="ion-ios-heart-outline dark"></span></a></li>
-            <li><a class="ajax-link" href="works.html"><span class="ion-ios-grid-view-outline dark"></span></a></li>
-          </ul>
-      </div>
-  </section>
+  <!-- dummy overlay for whole page when sidebar is active -->
+  <section class="featured-mask-overlay"></section>
 
-
-<!-- dummy overlay for whole page when sidebar is active -->
-<section class="featured-mask-overlay"></section>
-
-
-
-
-<section class="mastwrap-outer cd-main-content">
-
+  <section class="mastwrap-outer cd-main-content">
 
   <!-- MASTER CONTENT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <section id="ajax-content" class="mastwrap spaced-left">
-
 
   <!--works filter panel :starts -->
   <section id="works-filter-panel" class="works-filter-panel white-bg">
@@ -150,58 +133,54 @@
 
       @foreach($products as $product)
       <div class="intro-05-item fullheight text-center img-bg" style="background-image: url({{$product->image}});">
-        <a class="fullheight" href="project01.html">
+        <span class="fullheight" >
             <div class="intro-05-overlay fullheight">
               <div class="valign">
                 <h3 class="font2 dark"><span>{{$product->name}} </span></h3>
-                <p style="color:#000;margin-top:50px">
-                  Available Dec. 1
+                <p style="color:#000;margin-top:35px">
+                  <strong>Available Dec. 1</strong>
                 </p>
               </div>
             </div>
-        </a>
+        </span>
       </div>
       @endforeach
 
-
-
     </div>
-
   </section>
 
-      <section class="silver-bg project-cover halfheight">
-          <div class="valign">
-              <article class="welcome-heading text-center">
-                <h1 class="dark"><span class="font2">What We've Been Up To</span></h1>
-              </article>
-          </div>
-      </section>
+  <section id="yo" class="silver-bg project-cover halfheight">
+    <div class="valign">
+      <article class="welcome-heading text-center">
+        <h1 class="dark"><span class="font2">What We've Been Up To</span></h1>
+      </article>
+    </div>
+  </section>
 
   <div id="works-container" class="works-container works-masonry-container clearfix white-bg">
-    @foreach($posts as $post)
 
+    @foreach($posts as $post)
       <!-- start : works-item -->
       <div class="works-item works-item-one-third-spaced zoom web logos" >
         <img alt="" title="" class="img-responsive" src="{{$post->image}}"/>
         <a  href="{{$post->slug}}">
           <div class="works-item-inner">
             <h3 class="color font2">{{$post->title}}</h3>
-            <p><span class="dark font4">Work Category</span></p>
+            <p><span class="dark font4">Video</span></p>
           </div>
         </a>
       </div>
       <!-- end : works-item -->
-      @endforeach
+    @endforeach
 
-      @foreach($instagram as $post)
-
+    @foreach($instagram as $post)
       <!-- start : works-item -->
       <div class="works-item works-item-one-third-spaced zoom web logos">
         <img alt="" title="" class="img-responsive" src="  {{$post['images']['standard_resolution']['url']}}"/>
         <a  class="venobox" s="portfolio-gallery" href="  {{$post['images']['standard_resolution']['url']}}">
           <div class="works-item-inner">
-            <h3 class="color font2">Lightbox Gallery</h3>
-            <p><span class="dark font4">{{$post['caption']['text']}}</span></p>
+            <h3 class="color font1">{{$post['caption']['text']}}</h3>
+            <p><span class="dark font4">Instagram</span></p>
           </div>
         </a>
       </div>
@@ -215,15 +194,15 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <footer class="mastfoot container-fluid white-bg">
     <div class="row">
-          <article class="credits col-md-6">
-              <p class="font4 dark">Copyright &copy; 2015 <a target="_blank" href="http://wwww.designova.net">Designova</a>.<br/><a target="_blank" href="http://themeforest.net/user/designova/portfolio">Buy this template</a></p>
-          </article>
-          <ul class="foot-social col-md-6 text-right">
-            <li><a href="#"><img alt="" title="" src="images/social/01.svg"/></a></li>
-            <li><a href="#"><img alt="" title="" src="images/social/02.svg"/></a></li>
-            <li><a href="#"><img alt="" title="" src="images/social/03.svg"/></a></li>
-            <li><a href="#"><img alt="" title="" src="images/social/04.svg"/></a></li>
-          </ul>
+      <article class="credits col-md-6">
+        <p class="font4 dark">Copyright &copy; 2015 <a target="_blank" href="http://wwww.designova.net">Designova</a>.<br/><a target="_blank" href="http://themeforest.net/user/designova/portfolio">Buy this template</a></p>
+      </article>
+      <ul class="foot-social col-md-6 text-right">
+        <li><a href="#"><img alt="" title="" src="images/social/01.svg"/></a></li>
+        <li><a href="#"><img alt="" title="" src="images/social/02.svg"/></a></li>
+        <li><a href="#"><img alt="" title="" src="images/social/03.svg"/></a></li>
+        <li><a href="#"><img alt="" title="" src="images/social/04.svg"/></a></li>
+      </ul>
     </div>
   </footer>
 
@@ -251,13 +230,6 @@
       </div>
 </section>
 <!-- share panel :ends -->
-
-
-
-
-
-
-
 
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
