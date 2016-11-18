@@ -130,20 +130,6 @@
     <!-- Set up your HTML -->
     <div class="agency-carousel owl-carousel owl-nav-sticky-wide">
 
-      @foreach($products as $product)
-      <div class="intro-05-item fullheight text-center img-bg" style="background-image: url({{$product->image}});">
-        <span class="fullheight" >
-            <div class="intro-05-overlay fullheight">
-              <div class="valign">
-                <h3 class="font2 dark"><span>{{$product->name}} </span></h3>
-                <p style="color:#000;margin-top:35px">
-                  <strong>Available Dec. 1</strong>
-                </p>
-              </div>
-            </div>
-        </span>
-      </div>
-      @endforeach
 
     </div>
   </section>
@@ -172,19 +158,7 @@
       <!-- end : works-item -->
     @endforeach
 
-    @foreach($instagram as $post)
-      <!-- start : works-item -->
-      <div class="works-item works-item-one-third-spaced zoom web logos">
-        <img alt="" title="" class="img-responsive" src="  {{$post['images']['standard_resolution']['url']}}"/>
-        <a  class="venobox" s="portfolio-gallery" href="  {{$post['images']['standard_resolution']['url']}}">
-          <div class="works-item-inner">
-            <h3 class="color font1">{{$post['caption']['text']}}</h3>
-            <p><span class="dark font4">Instagram</span></p>
-          </div>
-        </a>
-      </div>
-      <!-- end : works-item -->
-      @endforeach
+
 
     </div>
     <!-- end : works-container -->
