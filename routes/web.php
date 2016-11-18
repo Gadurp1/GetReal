@@ -14,12 +14,9 @@
 
 Auth::routes();
 
-Route::get('/main', function () {
+Route::get('/', function () {
 
-    $posts=TCG\Voyager\Models\Post::get();
-    $products=\App\Product::orderBy('created_at','DESC')->get();
-
-    return view('welcome',compact('posts','products'));
+    return 'hello';
 
 });
 
