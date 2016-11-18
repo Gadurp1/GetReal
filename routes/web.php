@@ -14,7 +14,7 @@
 
 Auth::routes();
 
-Route::get('', function () {
+Route::get('/main', function () {
 
     $posts=TCG\Voyager\Models\Post::get();
     $products=\App\Product::orderBy('created_at','DESC')->get();
