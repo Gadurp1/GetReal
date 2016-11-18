@@ -1,4 +1,5 @@
 <?php
+use Vinkla\Instagram\Instagram;
 
 
 /*
