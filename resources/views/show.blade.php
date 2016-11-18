@@ -14,7 +14,7 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="icon" type="image/png" href="{{Voyager::setting('logo')}}" />
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -61,7 +61,6 @@
   </nav>
   <!-- mobile only navigation : ends -->
 
-  <a class="onscreen-trigger" href="#"><img alt="" title="" src="images/next.svg"/></a>
 
   <!-- Header
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -94,11 +93,11 @@
 
 
 
-    <section class="sub-wrap add-top add-bottom project-info">
       <div class="container">
         <div class="row">
 
-          <article class="col-md-11">
+          <article class="col-md-10">
+            <br>
             <h2 class="project-title font2 dark">{{$post->title}}</h2>
             <div class="liner color-bg"></div>
             <br>
@@ -108,54 +107,41 @@
               </div><!-- Comments start -->
             </section>
 
+
             @if($post->body)
               <div class="row">
-                <section class="project-cover halfheight">
-                  {!! $post->body !!}
-                </section>
+                <div class="col-md-11">
+                  <section class="project-cover " style="margin-top:175px">
+                    {!! $post->body !!}
+                  </section>
+                </div>
               </div>
             @endif
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <section class="halfheight">
 
-              <div class="comments">
-                <div id="disqus_thread"></div>
-                <script type="text/javascript">
-                /* * * CONFIGURATION VARIABLES * * */
-                var disqus_shortname = 'getrealsk8';
 
-                /* * * DON'T EDIT BELOW THIS LINE * * */
-                (function() {
-                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-              </div>
-              <!-- Content column end -->
-            </article>
+
+          <div class="comments" style="margin-top:150px" >
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES * * */
+            var disqus_shortname = 'getrealsk8';
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
           </div>
+          <!-- Content column end -->
+        </article>
+      </div>
 
-      </section>
+  </section>
+      </div>
 
-      <section class="project-nav silver-bg">
-          <div class="container-fluid">
-            <div class="row">
-              <article class="col-md-12 text-left no-pad">
-                 <ul class="project-nav-icon-wrap">
-                   <li><a  href="project02.html"><img alt="" title="" src="images/prev.svg"/></a></li>
-                   <li><a  href="works.html"><img alt="" title="" src="images/grid.svg"/></a></li>
-                   <li><a  href="project02.html"><img alt="" title="" src="images/next.svg"/></a></li>
-                 </ul>
-              </article>
-            </div>
-          </div>
-      </section>
 
   </section>
   <!-- end : mastwrap -->

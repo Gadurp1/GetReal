@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <title>Get Real Clothing</title>
   <meta name="description" content="Clothing Skateboarding Chicago Goodness">
-  <meta name="author" content="Designova">
+  <meta name="author" content="Get Real">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -69,7 +69,7 @@
   <header class="masthead white-bg fullheight">
     <div class="valign">
       <div class="inner">
-          <a class="ajax-link" href="index.html"><img alt="" title="" style="height:50px" class="logo" src="{{Voyager::setting('logo')}}"/></a>
+          <a class="ajax-link" ><img alt="" title="" style="height:50px" class="logo" src="{{Voyager::setting('logo')}}"/></a>
           <nav class="mastnav font2">
             {!! Menu::display('main') !!}
           </nav>
