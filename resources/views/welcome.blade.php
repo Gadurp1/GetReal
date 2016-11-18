@@ -130,6 +130,20 @@
     <!-- Set up your HTML -->
     <div class="agency-carousel owl-carousel owl-nav-sticky-wide">
 
+      @foreach($products as $product)
+      <div class="intro-05-item fullheight text-center img-bg" style="background-image: url({{$product->image}});">
+        <span class="fullheight" >
+            <div class="intro-05-overlay fullheight">
+              <div class="valign">
+                <h3 class="font2 dark"><span>{{$product->name}} </span></h3>
+                <p style="color:#000;margin-top:35px">
+                  <strong>Available Dec. 1</strong>
+                </p>
+              </div>
+            </div>
+        </span>
+      </div>
+      @endforeach
 
     </div>
   </section>
