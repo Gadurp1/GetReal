@@ -15,7 +15,7 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="icon" type="image/png" href="{{Voyager::setting('logo ')}}" />
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -55,6 +55,7 @@
   <div id="preloader">
     <div id="status"></div>
   </div>
+
 
   <!-- mobile only navigation : starts -->
   <nav class="mobile-nav">
@@ -172,7 +173,19 @@
       <!-- end : works-item -->
     @endforeach
 
-
+    @foreach($instagram as $post)
+      <!-- start : works-item -->
+      <div class="works-item works-item-one-third-spaced zoom web logos">
+        <img alt="" title="" class="img-responsive" src="  {{$post['images']['standard_resolution']['url']}}"/>
+        <a  class="venobox" s="portfolio-gallery" href="  {{$post['images']['standard_resolution']['url']}}">
+          <div class="works-item-inner">
+            <h3 class="color font1">{{$post['caption']['text']}}</h3>
+            <p><span class="dark font4">Instagram</span></p>
+          </div>
+        </a>
+      </div>
+      <!-- end : works-item -->
+      @endforeach
 
     </div>
     <!-- end : works-container -->

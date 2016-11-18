@@ -16,10 +16,13 @@ Auth::routes();
 
 Route::get('/', function () {
 
+    $instagram = new Instagram();
+    $instagram = $instagram->get('getrealclothing');
+
     $posts=TCG\Voyager\Models\Post::get();
     $products=\App\Product::orderBy('created_at','DESC')->get();
 
-    return view('welcome',compact('posts','products'));
+    return view('welcome',compact('posts','instagram','products'));
 
 });
 
