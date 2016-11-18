@@ -103,7 +103,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => '+AE+YKQ3sE6qtts+Vk81HZlCrQF4UQBBWzD1ztxxYVM=',
 
     'cipher' => 'AES-256-CBC',
 
@@ -168,7 +168,7 @@ return [
          */
          TCG\Voyager\VoyagerServiceProvider::class,
          Intervention\Image\ImageServiceProvider::class,
-         
+
         /*
          * Application Service Providers...
          */
