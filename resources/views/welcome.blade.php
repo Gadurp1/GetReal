@@ -145,10 +145,10 @@
     </div>
   </section>
 
-  <section id="yo" class="silver-bg project-cover halfheight">
+  <section id="yo" class="silver-bg project-cover halfheight" >
     <div class="valign">
-      <article class="welcome-heading text-center">
-        <h1 class="dark"><span class="font2">What We've Been Up To</span></h1>
+      <article class="text-center" style="border:none">
+        <h1><span class="font2">What We've Been Up To</span></h1>
       </article>
     </div>
   </section>
