@@ -134,6 +134,7 @@
                 <h3 class="font2 dark"><span>{{$product->name}} </span></h3>
                 <p style="color:#000;margin-top:35px">
                   <strong>Coming Soon!</strong>
+
                 </p>
               </div>
             </div>
