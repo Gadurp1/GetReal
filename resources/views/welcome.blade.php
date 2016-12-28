@@ -50,11 +50,7 @@
 
 <body>
 
-  <!-- Preloader
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div id="preloader">
-    <div id="status"></div>
-  </div>
+
 
   <!-- mobile only navigation : starts -->
   <nav class="mobile-nav">

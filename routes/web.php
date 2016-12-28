@@ -29,6 +29,12 @@ Route::get('/', function () {
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('Products/{slug}', function ($slug) {
+
+    $product=\App\Product::where('slug',$slug)->first();
+    return view('purchase',compact('product'));
+
+});
 Route::get('{slug}', function ($slug) {
 
     $post=TCG\Voyager\Models\Post::where('slug',$slug)->first();
