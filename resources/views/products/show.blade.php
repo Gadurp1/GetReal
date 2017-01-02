@@ -115,28 +115,24 @@
                   </div>
                   <hr>
                   <!-- end : works-container -->
-                  <form action="https://www.paypal.com/cgi-bin/webscr" class="form" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="6QJXRJCNDJTLU">
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="6QJXRJCNDJTLU">
+                <input type="hidden" name="on0" value="Sizes"></td></tr><tr><td>
 
+                    <select name="os0" class="col-md-12 input input-lg form-control" style="margin-bottom:20px">
+                  	<option value="Small">Small $60.00 USD</option>
+                  	<option value="Medium">Medium $60.00 USD</option>
+                  	<option value="Large">Large $60.00 USD</option>
+                  	<option value="X - Large">X - Large $60.00 USD</option>
+                  </select>
+                  <br>
+                  <br>
+                  <input type="hidden" name="currency_code" value="USD">
+                  <input type="image" src="https://dabuttonfactory.com/button.png?t=Checkout&f=Calibri-Bold&ts=24&tc=444&w=317&h=50&c=5&bgt=gradient&bgc=fff&ebgc=fff&bs=1&bc=666" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
 
-            <br>
-            <select name="os0" class="form input input-lg col-md-12 col-xs-12">
-              <option value="">Choose Size</option>
-
-          <option value="Small">Small $60.00 USD</option>
-          <option value="Medium">Medium $60.00 USD</option>
-          <option value="Large">Large $60.00 USD</option>
-          <option value="X - Large">X - Large $60.00 USD</option>
-        </select>
-        <br>
-        <input type="hidden" name="currency_code" value="USD">
-
-        <br>
-        <br>
-        <input type="image" src="https://dabuttonfactory.com/button.png?t=Checkout&f=Calibri-Bold&ts=24&tc=444&w=317&h=50&c=5&bgt=gradient&bgc=fff&ebgc=fff&bs=1&bc=666" class="col-md-12" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" class="img-responsive col-md-4" >
-        </form>
                 </div>
 
 
