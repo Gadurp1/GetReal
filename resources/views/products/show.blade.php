@@ -6,7 +6,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>{{$product->name}}</title>
-  <meta name="description" content="{{$product->description}}">
+  <meta name="description" content="{!! $product->description !!}">
   <meta name="author" content="Get Real">
 
   <!-- Mobile Specific Metas
