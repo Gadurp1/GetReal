@@ -130,13 +130,14 @@
       <div class="intro-05-item fullheight text-center img-bg" style="background-image: url({{$product->image}});">
         <span class="fullheight" >
             <div class="intro-05-overlay fullheight">
-              <div class="valign">
-                <h3 class="font2 dark"><span>{{$product->name}} </span></h3>
-                <p style="color:#000;margin-top:35px">
-                  <strong>Coming Soon!</strong>
+                <div class="valign">
+                  <a href="{{url('http://getreal.dev/Products/Heart-Print-Hoodie')}}">
 
-                </p>
-              </div>
+                  <h3 class="font2 dark"><span>{{$product->name}} </span></h3>
+                  <p style="color:#000;margin-top:35px">
+                  </p>
+                </a>
+                </div>
             </div>
         </span>
       </div>
@@ -186,21 +187,6 @@
     </div>
     <!-- end : works-container -->
 
-  <!-- FOOTER
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <footer class="mastfoot container-fluid white-bg">
-    <div class="row">
-      <article class="credits col-md-6">
-        <p class="font4 dark">Copyright &copy; 2015 <a target="_blank" href="http://wwww.designova.net">Designova</a>.<br/><a target="_blank" href="http://themeforest.net/user/designova/portfolio">Buy this template</a></p>
-      </article>
-      <ul class="foot-social col-md-6 text-right">
-        <li><a href="#"><img alt="" title="" src="images/social/01.svg"/></a></li>
-        <li><a href="#"><img alt="" title="" src="images/social/02.svg"/></a></li>
-        <li><a href="#"><img alt="" title="" src="images/social/03.svg"/></a></li>
-        <li><a href="#"><img alt="" title="" src="images/social/04.svg"/></a></li>
-      </ul>
-    </div>
-  </footer>
 
   </section>
   <!-- end : mastwrap -->
@@ -213,19 +199,6 @@
 <!-- Links to Frinds :ends -->
 
 
-<!--share panel :starts -->
-<section class="share-panel white-bg fullheight">
-      <a href="#0" class="share-panel-close white">x</a>
-      <div class="share-panel-heading font3 dark">social share</div>
-      <div class="valign">
-          <ul>
-            <li><a href="#"><span class="ion-social-twitter dark"></span></a></li>
-            <li><a href="#"><span class="ion-social-facebook dark"></span></a></li>
-            <li><a href="#"><span class="ion-social-pinterest dark"></span></a></li>
-          </ul>
-      </div>
-</section>
-<!-- share panel :ends -->
 
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

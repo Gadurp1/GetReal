@@ -65,11 +65,11 @@
   <header class="masthead white-bg fullheight">
     <div class="valign">
       <div class="inner">
-          <a class="ajax-link" ><img alt="" title="" style="height:50px" class="logo" src="{{Voyager::setting('logo')}}"/></a>
-          <nav class="mastnav font2">
-            {!! Menu::display('main') !!}
-          </nav>
-      </div>
+            <a class="ajax-link" ><img alt="" title="" style="height:50px" class="logo" src="../settings/November2016/76QUU9K0p0wpEYGjPHJY.jpg"/></a>
+            <nav class="mastnav font2">
+              <ul><li><a href="/#yo" target="_self"><span>Feed</span></a></li></ul>
+            </nav>
+        </div>
     </div>
 
     <div class="sticky-icons">

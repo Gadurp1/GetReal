@@ -32,7 +32,7 @@ Route::get('/home', 'HomeController@index');
 Route::get('Products/{slug}', function ($slug) {
 
     $product=\App\Product::where('slug',$slug)->first();
-    return view('purchase',compact('product'));
+    return view('products.show',compact('product'));
 
 });
 Route::get('{slug}', function ($slug) {
