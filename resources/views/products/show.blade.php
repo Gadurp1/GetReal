@@ -53,13 +53,12 @@
 
 
   <!-- mobile only navigation : starts -->
-  <nav class="mobile-nav">
     <nav class="mobile-nav">
       <ul class="slimmenu">
         <li><a  href="/">Feed</a></li>
       </ul>
     </nav>
-    <!-- mobile only navigation : ends -->  
+    <!-- mobile only navigation : ends -->
   <!-- mobile only navigation : ends -->
 
   <a class="onscreen-trigger" href="/#"><img alt="" title="" src="images/next.svg"/></a>
