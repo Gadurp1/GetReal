@@ -5,8 +5,8 @@
   <!-- Basic Page Info
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Get Real Clothing</title>
-  <meta name="description" content="Clothing Skateboarding Chicago Goodness">
+  <title>{{$product->name}}</title>
+  <meta name="description" content="{{$product->description}}">
   <meta name="author" content="Get Real">
 
   <!-- Mobile Specific Metas
@@ -45,8 +45,9 @@
   <link rel="stylesheet/less" type="text/css" href="/less/fonts.less">
   <script src="/less/less.min.js"></script>
   <meta property="og:image" content="{{url($product->image)}}"/>
-  <meta property="og:title" content="{{url($product->name)}}"/>
+  <meta property="og:title" content="http://getrealclothing.com/Products/Heart-Print-Hoodie"/>
   <meta property="og:site_name" content="Get Real Clothing"/>
+  <meta property="og:url" content="http://getrealclothing.com/Products/Heart-Print-Hoodie"/>
 
 
 </head>
