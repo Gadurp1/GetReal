@@ -6,7 +6,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>{{$product->name}}</title>
-  <meta name="description" content="{!! $product->description !!}">
+  <meta name="description" content="100% cotton drawstring hoody with a front kangaroo pocket.">
   <meta name="author" content="Get Real">
 
   <!-- Mobile Specific Metas
@@ -45,7 +45,7 @@
   <link rel="stylesheet/less" type="text/css" href="/less/fonts.less">
   <script src="/less/less.min.js"></script>
   <meta property="og:image" content="{{url($product->image)}}"/>
-  <meta property="og:title" content="http://getrealclothing.com/Products/Heart-Print-Hoodie"/>
+  <meta property="og:title" content="{{$product->name}}"/>
   <meta property="og:site_name" content="Get Real Clothing"/>
   <meta property="og:url" content="http://getrealclothing.com/Products/Heart-Print-Hoodie"/>
 
