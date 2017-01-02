@@ -96,20 +96,23 @@
             <div class="container-fluid">
               <div class="row">
                 <article class="col-md-12 text-left caption add-top-quarter">
+                  <h1><span class="font2">{{$product->name}}</span></h1>
+                  <hr>
                 </article>
               </div>
             </div>
         </section>
 
 
-              <div id="works-container" class="works-container works-masonry-container clearfix white-bg">
+              <div id="works-container" class="container works-masonry-container clearfix white-bg">
                 <div class="col-md-6">
                   <img src="{{url($product->image)}}" class="img-responsive col-md-12" alt="" />
                 </div>
                 <div class="col-md-6">
-                  <h4 class="font2 dark">{{$product->name}}</h4>
-
-                  {!! $product->description !!}
+                  <br>
+                  <div class="row">
+                    {!! $product->description !!}
+                  </div>
                   <hr>
                   <!-- end : works-container -->
                   <form action="https://www.paypal.com/cgi-bin/webscr" class="form" method="post" target="_top">
@@ -118,7 +121,9 @@
 
 
             <br>
-            <select name="os0" class="form input input-lg col-md-12">
+            <select name="os0" class="form input input-lg col-md-12 col-xs-12">
+              <option value="">Choose Size</option>
+
           <option value="Small">Small $60.00 USD</option>
           <option value="Medium">Medium $60.00 USD</option>
           <option value="Large">Large $60.00 USD</option>
