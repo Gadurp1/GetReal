@@ -44,13 +44,14 @@
   <link rel="stylesheet/less" type="text/css" href="/less/color.less">
   <link rel="stylesheet/less" type="text/css" href="/less/fonts.less">
   <script src="/less/less.min.js"></script>
+  <meta property="og:image" content="{{url($product->image)}}"/>
+  <meta property="og:title" content="{{url($product->name)}}"/>
+  <meta property="og:site_name" content="Get Real Clothing"/>
 
 
 </head>
 
 <body>
-
-
 
   <!-- mobile only navigation : starts -->
     <nav class="mobile-nav">
