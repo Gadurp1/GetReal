@@ -52,12 +52,15 @@
 
 
 
-  <!-- mobile only navigation : starts -->
-  <nav class="mobile-nav">
-    {!! Menu::display('main') !!}
-  </nav>
-  <!-- mobile only navigation : ends -->
 
+    <!-- mobile only navigation : starts -->
+      <nav class="mobile-nav">
+        <ul class="slimmenu">
+          <li><a  href="/">Feed</a></li>
+        </ul>
+      </nav>
+
+      <!-- mobile only navigation : ends -->
   <a class="onscreen-trigger" href="#"><img alt="" title="" src="images/next.svg"/></a>
 
   <!-- Header
@@ -127,20 +130,41 @@
     <div class="agency-carousel owl-carousel owl-nav-sticky-wide">
 
       @foreach($products as $product)
-      <div class="intro-05-item fullheight text-center img-bg" style="background-image: url({{$product->image}});">
-        <span class="fullheight" >
-            <div class="intro-05-overlay fullheight">
-                <div class="valign">
-                  <a href="{{url('http://getreal.dev/Products/Heart-Print-Hoodie')}}">
 
-                  <h3 class="font2 dark"><span>{{$product->name}} </span></h3>
-                  <p style="color:#000;margin-top:35px">
-                  </p>
-                </a>
-                </div>
-            </div>
-        </span>
-      </div>
+        @if($product->id==4  || $product->id==2)
+        <div class="intro-05-item fullheight text-center img-bg" style="background-image: url({{$product->image}});">
+          <span class="fullheight" >
+              <div class="intro-05-overlay fullheight">
+                  <div class="valign">
+                    <a href="{{url('http://getrealclothing.com/Products/Heart-Print-Hoodie')}}">
+
+                    <h3 class="font2 dark"><span>{{$product->name}} </span></h3>
+                    <p style="color:#000;margin-top:35px">
+                      Click for Details
+                    </p>
+                  </a>
+                  </div>
+              </div>
+          </span>
+        </div>
+        @endif
+
+        @if($product->id!=4)
+        <div class="intro-05-item fullheight text-center img-bg" style="background-image: url({{$product->image}});">
+          <span class="fullheight" >
+              <div class="intro-05-overlay fullheight">
+                  <div class="valign">
+
+                    <h3 class="font2 dark"><span>{{$product->name}} </span></h3>
+                    <p style="color:#000;margin-top:35px">
+                      Coming Soon
+                    </p>
+                  </div>
+              </div>
+          </span>
+        </div>
+        @endif
+
       @endforeach
 
     </div>

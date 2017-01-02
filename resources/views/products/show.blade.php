@@ -54,8 +54,12 @@
 
   <!-- mobile only navigation : starts -->
   <nav class="mobile-nav">
-    {!! Menu::display('main') !!}
-  </nav>
+    <nav class="mobile-nav">
+      <ul class="slimmenu">
+        <li><a  href="/">Feed</a></li>
+      </ul>
+    </nav>
+    <!-- mobile only navigation : ends -->  
   <!-- mobile only navigation : ends -->
 
   <a class="onscreen-trigger" href="/#"><img alt="" title="" src="images/next.svg"/></a>
@@ -65,11 +69,11 @@
   <header class="masthead white-bg fullheight">
     <div class="valign">
       <div class="inner">
-            <a class="ajax-link" ><img alt="" title="" style="height:50px" class="logo" src="../settings/November2016/76QUU9K0p0wpEYGjPHJY.jpg"/></a>
-            <nav class="mastnav font2">
-              <ul><li><a href="/#yo" target="_self"><span>Feed</span></a></li></ul>
-            </nav>
-        </div>
+          <a class="ajax-link" ><img alt="" title="" style="height:50px" class="logo" src="../{{Voyager::setting('logo')}}"/></a>
+          <nav class="mastnav font2">
+            {!! Menu::display('main') !!}
+          </nav>
+      </div>
     </div>
 
     <div class="sticky-icons">
