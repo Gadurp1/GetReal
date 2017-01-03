@@ -35,6 +35,13 @@ Route::get('Products/{slug}', function ($slug) {
     return view('products.show',compact('product'));
 
 });
+
+Route::get('Lookbook-2017', function () {
+    $files=File::files('lookbook');
+    return view('lookbook')->with('files',$files);
+
+});
+
 Route::get('{slug}', function ($slug) {
 
     $post=TCG\Voyager\Models\Post::where('slug',$slug)->first();
