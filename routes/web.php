@@ -37,7 +37,7 @@ Route::get('Products/{slug}', function ($slug) {
 });
 
 Route::get('Lookbook-2017', function () {
-    $files=File::files('storage/lookbook');
+    $files=File::files('lookbook');
     return view('lookbook')->with('files',$files);
 
 });
