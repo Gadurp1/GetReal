@@ -44,6 +44,11 @@
   <link rel="stylesheet/less" type="text/css" href="less/color.less">
   <link rel="stylesheet/less" type="text/css" href="less/fonts.less">
   <script src="less/less.min.js"></script>
+  <meta property="og:image" content="http://getrealclothing.com/lookbook/_55A7185%20(1)-min.jpg"/>
+  <meta property="og:title" content="Get Real Clothing Lookbook 2017"/>
+  <meta property="og:site_name" content="Get Real Clothing "/>
+  <meta property="og:url" content="http://getrealclothing.com/Lookbook-2017"/>
+
 
 
 </head>
@@ -61,6 +66,8 @@
       <nav class="mobile-nav">
         <ul class="slimmenu">
           <li><a  href="/">Feed</a></li>
+          <li><a  href="/Lookbook-2017">Lookbook</a></li>
+
         </ul>
       </nav>
 

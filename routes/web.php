@@ -21,7 +21,7 @@ Route::get('/', function () {
     $instagram = $instagram->get('getrealclothing');
 
     $posts=TCG\Voyager\Models\Post::get();
-    $products=\App\Product::orderBy('created_at','DESC')->get();
+    $products=\App\Product::orderBy('created_at','ASC')->get();
 
     return view('welcome',compact('posts','instagram','products'));
 

@@ -57,6 +57,8 @@
       <nav class="mobile-nav">
         <ul class="slimmenu">
           <li><a  href="/">Feed</a></li>
+          <li><a  href="/Lookbook-2017">Lookbook</a></li>
+
         </ul>
       </nav>
 
