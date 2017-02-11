@@ -38,9 +38,23 @@ Route::get('Products/{slug}', function ($slug) {
 
 Route::get('Lookbook-2017', function () {
     $files=File::files('lookbook');
+    $files=array_splice($files,0,4);
     return view('lookbook')->with('files',$files);
 
 });
+
+Route::get('Lookbook-2017/2', function () {
+    $files=File::files('lookbook');
+    $files=array_splice($files,4,4);
+    return view('lookbook2')->with('files',$files);
+});
+
+Route::get('Lookbook-2017/3', function () {
+    $files=File::files('lookbook');
+    $files=array_splice($files,8,4);
+    return view('lookbook2')->with('files',$files);
+});
+
 
 Route::get('{slug}', function ($slug) {
 

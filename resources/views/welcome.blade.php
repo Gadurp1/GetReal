@@ -133,12 +133,12 @@
 
       @foreach($products as $product)
 
-        @if($product->id==4  || $product->id==2)
+        @if($product->id!=5)
         <div class="intro-05-item fullheight text-center img-bg" style="background-image: url({{$product->image}});">
           <span class="fullheight" >
               <div class="intro-05-overlay fullheight">
                   <div class="valign">
-                    <a href="{{url('http://getrealclothing.com/Products/Heart-Print-Hoodie')}}">
+                    <a href="{{url('http://getrealclothing.com/Products/'.$product->slug.'')}}">
 
                     <h3 class="font2 dark"><span>{{$product->name}} </span></h3>
                     <p style="color:#000;margin-top:35px">
@@ -151,21 +151,7 @@
         </div>
         @endif
 
-        @if($product->id!=4)
-        <div class="intro-05-item fullheight text-center img-bg" style="background-image: url({{$product->image}});">
-          <span class="fullheight" >
-              <div class="intro-05-overlay fullheight">
-                  <div class="valign">
 
-                    <h3 class="font2 dark"><span>{{$product->name}} </span></h3>
-                    <p style="color:#000;margin-top:35px">
-                      Coming Soon
-                    </p>
-                  </div>
-              </div>
-          </span>
-        </div>
-        @endif
 
       @endforeach
 

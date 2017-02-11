@@ -44,11 +44,6 @@
   <link rel="stylesheet/less" type="text/css" href="less/color.less">
   <link rel="stylesheet/less" type="text/css" href="less/fonts.less">
   <script src="less/less.min.js"></script>
-  <meta property="og:image" content="http://getrealclothing.com/lookbook/_55A7185%20(1)-min.jpg"/>
-  <meta property="og:title" content="Get Real Clothing Lookbook 2017"/>
-  <meta property="og:site_name" content="Get Real Clothing "/>
-  <meta property="og:url" content="http://getrealclothing.com/Lookbook-2017"/>
-
 
 
 </head>
@@ -56,18 +51,12 @@
 <body>
 
 
-  <!-- Preloader
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div id="preloader">
-    <div id="status"></div>
-  </div>
+
 
     <!-- mobile only navigation : starts -->
       <nav class="mobile-nav">
         <ul class="slimmenu">
           <li><a  href="/">Feed</a></li>
-          <li><a  href="/Lookbook-2017">Lookbook</a></li>
-
         </ul>
       </nav>
 
@@ -139,36 +128,34 @@
 
 
 
-  <div id="works-container" class="works-container works-masonry-container clearfix white-bg">
 
 
 
+    <div id="works-container" class="works-container works-masonry-container clearfix white-bg">
+      <div class="scroll">
 
-                <div id="works-container" class="works-container works-masonry-container clearfix white-bg">
+        @foreach($files as $file)
+        <!-- start : works-item -->
 
-                      @foreach($files as $file)
-                      <!-- start : works-item -->
-                      <div class="works-item works-item-one-third-spaced zoom ui web">
-                              <img alt="" title="" class="img-responsive" src="{{$file}}"/>
-                              <a  class="venobox" data-gall="portfolio-gallery" href="{{$file}}">
-                                  <div class="works-item-inner">
+        <div class="works-item works-item-one-half-spaced zoom ui web">
+                <img alt="" title="" class="img-responsive" src="{{$file}}"/>
+                <a  class="venobox" data-gall="portfolio-gallery" href="{{$file}}">
 
-                                  </div>
-                              </a>
-                      </div>
-                      <!-- end : works-item -->
-
-
-                  @endforeach
+                    </div>
+                </a>
+        </div>
+        <!-- end : works-item -->
 
 
+        @endforeach
+        <a href="Lookbook-2017/2">next page</a>
 
-                            </div>
-                            <!-- end : works-container -->
+      </div>
 
 
+    </div>              <!-- end : works-container -->
 
-              </div>
+
               <!-- end : works-container -->
 
 
@@ -180,21 +167,18 @@
 </section>
 <!-- mastwrap-outer ends -->
 
-<!--Links to Frinds :starts -->
-  @include('components.linksToFriends')
-<!-- Links to Frinds :ends -->
 
-
-
-  <!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jscroll/2.3.5/jquery.jscroll.min.js"></script>
   <script src="javascripts/libs/common.js"></script>
-  <script src="javascripts/libs/bootstrap.min.js"></script>
   <script src="javascripts/custom/main.js"></script>
 
+ <script type="text/javascript">
+    $('.scroll').jscroll();
+  </script>
 </body>
 </html>
