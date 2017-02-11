@@ -119,23 +119,8 @@
                   </div>
                   <hr>
                   <!-- end : works-container -->
-                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                  <input type="hidden" name="cmd" value="_s-xclick">
-                  <input type="hidden" name="hosted_button_id" value="6QJXRJCNDJTLU">
-                <input type="hidden" name="on0" value="Sizes"></td></tr><tr><td>
+                  {!! $product->stripe_form !!}
 
-                    <select name="os0" class="col-md-12 input input-lg form-control" style="margin-bottom:20px">
-                  	<option value="Small">Small $60.00 USD</option>
-                  	<option value="Medium">Medium $60.00 USD</option>
-                  	<option value="Large">Large $60.00 USD</option>
-                  	<option value="X - Large">X - Large $60.00 USD</option>
-                  </select>
-                  <br>
-                  <br>
-                  <input type="hidden" name="currency_code" value="USD">
-                  <input type="image" src="https://dabuttonfactory.com/button.png?t=Checkout&f=Calibri-Bold&ts=24&tc=444&w=317&h=50&c=5&bgt=gradient&bgc=fff&ebgc=fff&bs=1&bc=666" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                  </form>
 
                 </div>
 
