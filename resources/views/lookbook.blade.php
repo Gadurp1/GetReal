@@ -137,8 +137,7 @@
                 <img alt="" title="" class="img-responsive" src="{{$file}}"/>
                 <a  class="venobox" data-gall="portfolio-gallery" href="{{$file}}">
                     <div class="works-item-inner">
-                      <h3 class="color font2">12/03/2015</h3>
-                      <p><span class="dark font4">Caption</span></p>
+              
                     </div>
                 </a>
         </div>
