@@ -127,10 +127,6 @@
   <section class="intro intro-05 agency-carousel-wrap fullheight">
 
 
-
-
-
-
     <div id="works-container" class="works-container works-masonry-container clearfix white-bg">
       <div class="scroll">
 
@@ -140,7 +136,9 @@
         <div class="works-item works-item-one-half-spaced zoom ui web">
                 <img alt="" title="" class="img-responsive" src="{{$file}}"/>
                 <a  class="venobox" data-gall="portfolio-gallery" href="{{$file}}">
-
+                    <div class="works-item-inner">
+                      <h3 class="color font2">12/03/2015</h3>
+                      <p><span class="dark font4">Caption</span></p>
                     </div>
                 </a>
         </div>
@@ -172,10 +170,11 @@
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+  <script src="javascripts/libs/common.js"></script>
+  <script src="javascripts/libs/bootstrap.min.js"></script>
+  <script src="javascripts/custom/main.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jscroll/2.3.5/jquery.jscroll.min.js"></script>
-  <script src="javascripts/libs/common.js"></script>
-  <script src="javascripts/custom/main.js"></script>
 
  <script type="text/javascript">
     $('.scroll').jscroll();
